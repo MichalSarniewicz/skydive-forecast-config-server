@@ -38,11 +38,13 @@ jobs:
       - name: Test docker image
         run: |
           docker run -d --name config-server-test \
+            -e SPRING_PROFILES_ACTIVE=native \
+            -e SPRING_CLOUD_CONFIG_SERVER_NATIVE_SEARCH_LOCATIONS=classpath:/ \
             -p 8888:8888 \
             ${{ env.IMAGE_NAME }}:latest
           echo "Waiting for config-server to start..."
-          sleep 30
+          sleep 45
           docker logs config-server-test
-          curl -f http://localhost:8888/actuator/health || exit 1
+          curl -f --show-error http://localhost:8888/actuator/health || exit 1
           docker stop config-server-test
           docker rm config-server-test
