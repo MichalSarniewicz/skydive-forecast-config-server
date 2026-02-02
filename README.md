@@ -1,5 +1,7 @@
 # Skydive Forecast - Config Server
 
+[![CI Pipeline](https://github.com/MichalSarniewicz/skydive-forecast-config-server/actions/workflows/ci.yml/badge.svg)](https://github.com/MichalSarniewicz/skydive-forecast-config-server/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/MichalSarniewicz/skydive-forecast-config-server/branch/master/graph/badge.svg)](https://codecov.io/gh/MichalSarniewicz/skydive-forecast-config-server)
 [![Java](https://img.shields.io/badge/Java-21-green?logo=openjdk)](https://openjdk.org/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5.6-brightgreen?logo=springboot)](https://spring.io/projects/spring-boot)
 [![Spring Cloud](https://img.shields.io/badge/Spring%20Cloud-2025.0.0-brightgreen)](https://spring.io/projects/spring-cloud)
